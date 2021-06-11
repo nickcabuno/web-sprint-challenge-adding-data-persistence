@@ -27,5 +27,5 @@ function validateProject(req, res, next) {
 
   module.exports = {
     validateProject,
-    validateResource,
+    validateResource
   }

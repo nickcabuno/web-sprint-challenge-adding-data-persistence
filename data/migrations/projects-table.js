@@ -3,7 +3,7 @@ exports.up = function(knex) {
         tbl.increments('project_id')
         tbl.string('project_name', 128).notNullable().unique()
         tbl.string('project_description', 128)
-        tbl.boolean('project_completed').defaultTo(false);
+        tbl.boolean('project_completed').defaultTo(0);
     })
 }
 
